@@ -1,0 +1,1098 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62A2A47C2C22191F0054DAF0 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2A47B2C22191F0054DAF0 /* DocumentPicker.swift */; };
+		62B7E8522C32D6DF00547D1C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7E8512C32D6DF00547D1C /* AppState.swift */; };
+		62B7E8542C32DB7400547D1C /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7E8532C32DB7400547D1C /* RecordingView.swift */; };
+		62CE8CD42C13AC1F00F9749A /* ActiveAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8CD32C13AC1F00F9749A /* ActiveAlarmApp.swift */; };
+		62CE8CD62C13AC1F00F9749A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8CD52C13AC1F00F9749A /* ContentView.swift */; };
+		62CE8CD82C13AC2500F9749A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CE8CD72C13AC2500F9749A /* Assets.xcassets */; };
+		62CE8CDB2C13AC2500F9749A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CE8CDA2C13AC2500F9749A /* Preview Assets.xcassets */; };
+		62CE8CE52C13AC2600F9749A /* ActiveAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8CE42C13AC2600F9749A /* ActiveAlarmTests.swift */; };
+		62CE8CEF2C13AC2600F9749A /* ActiveAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8CEE2C13AC2600F9749A /* ActiveAlarmUITests.swift */; };
+		62CE8CF12C13AC2600F9749A /* ActiveAlarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8CF02C13AC2600F9749A /* ActiveAlarmUITestsLaunchTests.swift */; };
+		62CE8CF72C13AC2600F9749A /* ActiveAlarm Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 62CE8CF62C13AC2600F9749A /* ActiveAlarm Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		62CE8CFC2C13AC2600F9749A /* ActiveAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8CFB2C13AC2600F9749A /* ActiveAlarmApp.swift */; };
+		62CE8CFE2C13AC2600F9749A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8CFD2C13AC2600F9749A /* ContentView.swift */; };
+		62CE8D002C13AC2800F9749A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CE8CFF2C13AC2800F9749A /* Assets.xcassets */; };
+		62CE8D032C13AC2800F9749A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CE8D022C13AC2800F9749A /* Preview Assets.xcassets */; };
+		62CE8D0D2C13AC2800F9749A /* ActiveAlarm_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8D0C2C13AC2800F9749A /* ActiveAlarm_Watch_AppTests.swift */; };
+		62CE8D172C13AC2800F9749A /* ActiveAlarm_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8D162C13AC2800F9749A /* ActiveAlarm_Watch_AppUITests.swift */; };
+		62CE8D192C13AC2800F9749A /* ActiveAlarm_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8D182C13AC2800F9749A /* ActiveAlarm_Watch_AppUITestsLaunchTests.swift */; };
+		62CE8D302C13BF5F00F9749A /* WorkoutDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8D2F2C13BF5F00F9749A /* WorkoutDetail.swift */; };
+		62CE8D362C14527E00F9749A /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8D352C14527E00F9749A /* Motion.swift */; };
+		62CE8D382C1460A700F9749A /* MotionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8D372C1460A600F9749A /* MotionData.swift */; };
+		62E4C5622C14B44B0090BF7F /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4C5612C14B44B0090BF7F /* Health.swift */; };
+		62E4C5682C166DB00090BF7F /* WorkoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4C5672C166DB00090BF7F /* WorkoutData.swift */; };
+		62E4C56D2C173C800090BF7F /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4C56B2C173A3B0090BF7F /* PhoneConnector.swift */; };
+		62E4C56E2C173C840090BF7F /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4C5692C1739930090BF7F /* WatchConnector.swift */; };
+		62E4C5712C17421A0090BF7F /* MotionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4C56F2C17421A0090BF7F /* MotionData.swift */; };
+		62E4C5722C17421A0090BF7F /* WorkoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4C5702C17421A0090BF7F /* WorkoutData.swift */; };
+		62E4C5762C17477B0090BF7F /* WorkoutDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4C5752C17477B0090BF7F /* WorkoutDetail.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62CE8CE12C13AC2600F9749A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62CE8CC82C13AC1F00F9749A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62CE8CCF2C13AC1F00F9749A;
+			remoteInfo = ActiveAlarm;
+		};
+		62CE8CEB2C13AC2600F9749A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62CE8CC82C13AC1F00F9749A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62CE8CCF2C13AC1F00F9749A;
+			remoteInfo = ActiveAlarm;
+		};
+		62CE8CF82C13AC2600F9749A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62CE8CC82C13AC1F00F9749A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62CE8CF52C13AC2600F9749A;
+			remoteInfo = "ActiveAlarm Watch App";
+		};
+		62CE8D092C13AC2800F9749A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62CE8CC82C13AC1F00F9749A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62CE8CF52C13AC2600F9749A;
+			remoteInfo = "ActiveAlarm Watch App";
+		};
+		62CE8D132C13AC2800F9749A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62CE8CC82C13AC1F00F9749A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62CE8CF52C13AC2600F9749A;
+			remoteInfo = "ActiveAlarm Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62CE8D1F2C13AC2800F9749A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				62CE8CF72C13AC2600F9749A /* ActiveAlarm Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		62A2A47B2C22191F0054DAF0 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		62B7E8512C32D6DF00547D1C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		62B7E8532C32DB7400547D1C /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		62CE8CD02C13AC1F00F9749A /* ActiveAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiveAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CE8CD32C13AC1F00F9749A /* ActiveAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveAlarmApp.swift; sourceTree = "<group>"; };
+		62CE8CD52C13AC1F00F9749A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		62CE8CD72C13AC2500F9749A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62CE8CDA2C13AC2500F9749A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		62CE8CE02C13AC2600F9749A /* ActiveAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActiveAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CE8CE42C13AC2600F9749A /* ActiveAlarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveAlarmTests.swift; sourceTree = "<group>"; };
+		62CE8CEA2C13AC2600F9749A /* ActiveAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActiveAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CE8CEE2C13AC2600F9749A /* ActiveAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveAlarmUITests.swift; sourceTree = "<group>"; };
+		62CE8CF02C13AC2600F9749A /* ActiveAlarmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveAlarmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		62CE8CF62C13AC2600F9749A /* ActiveAlarm Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ActiveAlarm Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CE8CFB2C13AC2600F9749A /* ActiveAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveAlarmApp.swift; sourceTree = "<group>"; };
+		62CE8CFD2C13AC2600F9749A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		62CE8CFF2C13AC2800F9749A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62CE8D022C13AC2800F9749A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		62CE8D082C13AC2800F9749A /* ActiveAlarm Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ActiveAlarm Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CE8D0C2C13AC2800F9749A /* ActiveAlarm_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveAlarm_Watch_AppTests.swift; sourceTree = "<group>"; };
+		62CE8D122C13AC2800F9749A /* ActiveAlarm Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ActiveAlarm Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CE8D162C13AC2800F9749A /* ActiveAlarm_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveAlarm_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		62CE8D182C13AC2800F9749A /* ActiveAlarm_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveAlarm_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		62CE8D2F2C13BF5F00F9749A /* WorkoutDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetail.swift; sourceTree = "<group>"; };
+		62CE8D332C144D1000F9749A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		62CE8D352C14527E00F9749A /* Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
+		62CE8D372C1460A600F9749A /* MotionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionData.swift; sourceTree = "<group>"; };
+		62E4C55C2C14AC0B0090BF7F /* ActiveAlarm Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ActiveAlarm Watch App.entitlements"; sourceTree = "<group>"; };
+		62E4C5612C14B44B0090BF7F /* Health.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		62E4C5672C166DB00090BF7F /* WorkoutData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutData.swift; sourceTree = "<group>"; };
+		62E4C5692C1739930090BF7F /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WatchConnector.swift; path = "ActiveAlarm Watch App/WatchConnector.swift"; sourceTree = SOURCE_ROOT; };
+		62E4C56B2C173A3B0090BF7F /* PhoneConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhoneConnector.swift; path = ../ActiveAlarm/PhoneConnector.swift; sourceTree = "<group>"; };
+		62E4C56F2C17421A0090BF7F /* MotionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionData.swift; sourceTree = "<group>"; };
+		62E4C5702C17421A0090BF7F /* WorkoutData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutData.swift; sourceTree = "<group>"; };
+		62E4C5752C17477B0090BF7F /* WorkoutDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetail.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62CE8CCD2C13AC1F00F9749A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8CDD2C13AC2600F9749A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8CE72C13AC2600F9749A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8CF32C13AC2600F9749A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8D052C13AC2800F9749A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8D0F2C13AC2800F9749A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62CE8CC72C13AC1F00F9749A = {
+			isa = PBXGroup;
+			children = (
+				62CE8CD22C13AC1F00F9749A /* ActiveAlarm */,
+				62CE8CE32C13AC2600F9749A /* ActiveAlarmTests */,
+				62CE8CED2C13AC2600F9749A /* ActiveAlarmUITests */,
+				62CE8CFA2C13AC2600F9749A /* ActiveAlarm Watch App */,
+				62CE8D0B2C13AC2800F9749A /* ActiveAlarm Watch AppTests */,
+				62CE8D152C13AC2800F9749A /* ActiveAlarm Watch AppUITests */,
+				62CE8CD12C13AC1F00F9749A /* Products */,
+				62CE8D322C144D0F00F9749A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62CE8CD12C13AC1F00F9749A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62CE8CD02C13AC1F00F9749A /* ActiveAlarm.app */,
+				62CE8CE02C13AC2600F9749A /* ActiveAlarmTests.xctest */,
+				62CE8CEA2C13AC2600F9749A /* ActiveAlarmUITests.xctest */,
+				62CE8CF62C13AC2600F9749A /* ActiveAlarm Watch App.app */,
+				62CE8D082C13AC2800F9749A /* ActiveAlarm Watch AppTests.xctest */,
+				62CE8D122C13AC2800F9749A /* ActiveAlarm Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62CE8CD22C13AC1F00F9749A /* ActiveAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				62E4C56F2C17421A0090BF7F /* MotionData.swift */,
+				62E4C5702C17421A0090BF7F /* WorkoutData.swift */,
+				62CE8CD32C13AC1F00F9749A /* ActiveAlarmApp.swift */,
+				62CE8CD52C13AC1F00F9749A /* ContentView.swift */,
+				62E4C5752C17477B0090BF7F /* WorkoutDetail.swift */,
+				62E4C5692C1739930090BF7F /* WatchConnector.swift */,
+				62CE8CD72C13AC2500F9749A /* Assets.xcassets */,
+				62CE8CD92C13AC2500F9749A /* Preview Content */,
+				62A2A47B2C22191F0054DAF0 /* DocumentPicker.swift */,
+				62B7E8512C32D6DF00547D1C /* AppState.swift */,
+				62B7E8532C32DB7400547D1C /* RecordingView.swift */,
+			);
+			path = ActiveAlarm;
+			sourceTree = "<group>";
+		};
+		62CE8CD92C13AC2500F9749A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				62CE8CDA2C13AC2500F9749A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		62CE8CE32C13AC2600F9749A /* ActiveAlarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				62CE8CE42C13AC2600F9749A /* ActiveAlarmTests.swift */,
+			);
+			path = ActiveAlarmTests;
+			sourceTree = "<group>";
+		};
+		62CE8CED2C13AC2600F9749A /* ActiveAlarmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62CE8CEE2C13AC2600F9749A /* ActiveAlarmUITests.swift */,
+				62CE8CF02C13AC2600F9749A /* ActiveAlarmUITestsLaunchTests.swift */,
+			);
+			path = ActiveAlarmUITests;
+			sourceTree = "<group>";
+		};
+		62CE8CFA2C13AC2600F9749A /* ActiveAlarm Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				62E4C56B2C173A3B0090BF7F /* PhoneConnector.swift */,
+				62E4C55C2C14AC0B0090BF7F /* ActiveAlarm Watch App.entitlements */,
+				62CE8CFB2C13AC2600F9749A /* ActiveAlarmApp.swift */,
+				62CE8CFD2C13AC2600F9749A /* ContentView.swift */,
+				62CE8D2F2C13BF5F00F9749A /* WorkoutDetail.swift */,
+				62E4C5672C166DB00090BF7F /* WorkoutData.swift */,
+				62E4C5612C14B44B0090BF7F /* Health.swift */,
+				62CE8D372C1460A600F9749A /* MotionData.swift */,
+				62CE8D352C14527E00F9749A /* Motion.swift */,
+				62CE8CFF2C13AC2800F9749A /* Assets.xcassets */,
+				62CE8D012C13AC2800F9749A /* Preview Content */,
+			);
+			path = "ActiveAlarm Watch App";
+			sourceTree = "<group>";
+		};
+		62CE8D012C13AC2800F9749A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				62CE8D022C13AC2800F9749A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		62CE8D0B2C13AC2800F9749A /* ActiveAlarm Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				62CE8D0C2C13AC2800F9749A /* ActiveAlarm_Watch_AppTests.swift */,
+			);
+			path = "ActiveAlarm Watch AppTests";
+			sourceTree = "<group>";
+		};
+		62CE8D152C13AC2800F9749A /* ActiveAlarm Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62CE8D162C13AC2800F9749A /* ActiveAlarm_Watch_AppUITests.swift */,
+				62CE8D182C13AC2800F9749A /* ActiveAlarm_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "ActiveAlarm Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		62CE8D322C144D0F00F9749A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62CE8D332C144D1000F9749A /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62CE8CCF2C13AC1F00F9749A /* ActiveAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CE8D202C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarm" */;
+			buildPhases = (
+				62CE8CCC2C13AC1F00F9749A /* Sources */,
+				62CE8CCD2C13AC1F00F9749A /* Frameworks */,
+				62CE8CCE2C13AC1F00F9749A /* Resources */,
+				62CE8D1F2C13AC2800F9749A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62CE8CF92C13AC2600F9749A /* PBXTargetDependency */,
+			);
+			name = ActiveAlarm;
+			productName = ActiveAlarm;
+			productReference = 62CE8CD02C13AC1F00F9749A /* ActiveAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62CE8CDF2C13AC2600F9749A /* ActiveAlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CE8D232C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarmTests" */;
+			buildPhases = (
+				62CE8CDC2C13AC2600F9749A /* Sources */,
+				62CE8CDD2C13AC2600F9749A /* Frameworks */,
+				62CE8CDE2C13AC2600F9749A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62CE8CE22C13AC2600F9749A /* PBXTargetDependency */,
+			);
+			name = ActiveAlarmTests;
+			productName = ActiveAlarmTests;
+			productReference = 62CE8CE02C13AC2600F9749A /* ActiveAlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62CE8CE92C13AC2600F9749A /* ActiveAlarmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CE8D262C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarmUITests" */;
+			buildPhases = (
+				62CE8CE62C13AC2600F9749A /* Sources */,
+				62CE8CE72C13AC2600F9749A /* Frameworks */,
+				62CE8CE82C13AC2600F9749A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62CE8CEC2C13AC2600F9749A /* PBXTargetDependency */,
+			);
+			name = ActiveAlarmUITests;
+			productName = ActiveAlarmUITests;
+			productReference = 62CE8CEA2C13AC2600F9749A /* ActiveAlarmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		62CE8CF52C13AC2600F9749A /* ActiveAlarm Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CE8D1C2C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarm Watch App" */;
+			buildPhases = (
+				62CE8CF22C13AC2600F9749A /* Sources */,
+				62CE8CF32C13AC2600F9749A /* Frameworks */,
+				62CE8CF42C13AC2600F9749A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ActiveAlarm Watch App";
+			productName = "ActiveAlarm Watch App";
+			productReference = 62CE8CF62C13AC2600F9749A /* ActiveAlarm Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62CE8D072C13AC2800F9749A /* ActiveAlarm Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CE8D292C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarm Watch AppTests" */;
+			buildPhases = (
+				62CE8D042C13AC2800F9749A /* Sources */,
+				62CE8D052C13AC2800F9749A /* Frameworks */,
+				62CE8D062C13AC2800F9749A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62CE8D0A2C13AC2800F9749A /* PBXTargetDependency */,
+			);
+			name = "ActiveAlarm Watch AppTests";
+			productName = "ActiveAlarm Watch AppTests";
+			productReference = 62CE8D082C13AC2800F9749A /* ActiveAlarm Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62CE8D112C13AC2800F9749A /* ActiveAlarm Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CE8D2C2C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarm Watch AppUITests" */;
+			buildPhases = (
+				62CE8D0E2C13AC2800F9749A /* Sources */,
+				62CE8D0F2C13AC2800F9749A /* Frameworks */,
+				62CE8D102C13AC2800F9749A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62CE8D142C13AC2800F9749A /* PBXTargetDependency */,
+			);
+			name = "ActiveAlarm Watch AppUITests";
+			productName = "ActiveAlarm Watch AppUITests";
+			productReference = 62CE8D122C13AC2800F9749A /* ActiveAlarm Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62CE8CC82C13AC1F00F9749A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					62CE8CCF2C13AC1F00F9749A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					62CE8CDF2C13AC2600F9749A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 62CE8CCF2C13AC1F00F9749A;
+					};
+					62CE8CE92C13AC2600F9749A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 62CE8CCF2C13AC1F00F9749A;
+					};
+					62CE8CF52C13AC2600F9749A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					62CE8D072C13AC2800F9749A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 62CE8CF52C13AC2600F9749A;
+					};
+					62CE8D112C13AC2800F9749A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 62CE8CF52C13AC2600F9749A;
+					};
+				};
+			};
+			buildConfigurationList = 62CE8CCB2C13AC1F00F9749A /* Build configuration list for PBXProject "ActiveAlarm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62CE8CC72C13AC1F00F9749A;
+			productRefGroup = 62CE8CD12C13AC1F00F9749A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62CE8CCF2C13AC1F00F9749A /* ActiveAlarm */,
+				62CE8CDF2C13AC2600F9749A /* ActiveAlarmTests */,
+				62CE8CE92C13AC2600F9749A /* ActiveAlarmUITests */,
+				62CE8CF52C13AC2600F9749A /* ActiveAlarm Watch App */,
+				62CE8D072C13AC2800F9749A /* ActiveAlarm Watch AppTests */,
+				62CE8D112C13AC2800F9749A /* ActiveAlarm Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62CE8CCE2C13AC1F00F9749A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CE8CDB2C13AC2500F9749A /* Preview Assets.xcassets in Resources */,
+				62CE8CD82C13AC2500F9749A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8CDE2C13AC2600F9749A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8CE82C13AC2600F9749A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8CF42C13AC2600F9749A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CE8D032C13AC2800F9749A /* Preview Assets.xcassets in Resources */,
+				62CE8D002C13AC2800F9749A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8D062C13AC2800F9749A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8D102C13AC2800F9749A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62CE8CCC2C13AC1F00F9749A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E4C5762C17477B0090BF7F /* WorkoutDetail.swift in Sources */,
+				62E4C5722C17421A0090BF7F /* WorkoutData.swift in Sources */,
+				62CE8CD62C13AC1F00F9749A /* ContentView.swift in Sources */,
+				62B7E8522C32D6DF00547D1C /* AppState.swift in Sources */,
+				62E4C56E2C173C840090BF7F /* WatchConnector.swift in Sources */,
+				62B7E8542C32DB7400547D1C /* RecordingView.swift in Sources */,
+				62CE8CD42C13AC1F00F9749A /* ActiveAlarmApp.swift in Sources */,
+				62A2A47C2C22191F0054DAF0 /* DocumentPicker.swift in Sources */,
+				62E4C5712C17421A0090BF7F /* MotionData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8CDC2C13AC2600F9749A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CE8CE52C13AC2600F9749A /* ActiveAlarmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8CE62C13AC2600F9749A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CE8CF12C13AC2600F9749A /* ActiveAlarmUITestsLaunchTests.swift in Sources */,
+				62CE8CEF2C13AC2600F9749A /* ActiveAlarmUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8CF22C13AC2600F9749A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CE8D302C13BF5F00F9749A /* WorkoutDetail.swift in Sources */,
+				62CE8D362C14527E00F9749A /* Motion.swift in Sources */,
+				62CE8CFE2C13AC2600F9749A /* ContentView.swift in Sources */,
+				62CE8CFC2C13AC2600F9749A /* ActiveAlarmApp.swift in Sources */,
+				62E4C5682C166DB00090BF7F /* WorkoutData.swift in Sources */,
+				62E4C5622C14B44B0090BF7F /* Health.swift in Sources */,
+				62CE8D382C1460A700F9749A /* MotionData.swift in Sources */,
+				62E4C56D2C173C800090BF7F /* PhoneConnector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8D042C13AC2800F9749A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CE8D0D2C13AC2800F9749A /* ActiveAlarm_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CE8D0E2C13AC2800F9749A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CE8D192C13AC2800F9749A /* ActiveAlarm_Watch_AppUITestsLaunchTests.swift in Sources */,
+				62CE8D172C13AC2800F9749A /* ActiveAlarm_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62CE8CE22C13AC2600F9749A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62CE8CCF2C13AC1F00F9749A /* ActiveAlarm */;
+			targetProxy = 62CE8CE12C13AC2600F9749A /* PBXContainerItemProxy */;
+		};
+		62CE8CEC2C13AC2600F9749A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62CE8CCF2C13AC1F00F9749A /* ActiveAlarm */;
+			targetProxy = 62CE8CEB2C13AC2600F9749A /* PBXContainerItemProxy */;
+		};
+		62CE8CF92C13AC2600F9749A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62CE8CF52C13AC2600F9749A /* ActiveAlarm Watch App */;
+			targetProxy = 62CE8CF82C13AC2600F9749A /* PBXContainerItemProxy */;
+		};
+		62CE8D0A2C13AC2800F9749A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62CE8CF52C13AC2600F9749A /* ActiveAlarm Watch App */;
+			targetProxy = 62CE8D092C13AC2800F9749A /* PBXContainerItemProxy */;
+		};
+		62CE8D142C13AC2800F9749A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62CE8CF52C13AC2600F9749A /* ActiveAlarm Watch App */;
+			targetProxy = 62CE8D132C13AC2800F9749A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		62CE8D1A2C13AC2800F9749A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62CE8D1B2C13AC2800F9749A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		62CE8D1D2C13AC2800F9749A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ActiveAlarm Watch App/ActiveAlarm Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ActiveAlarm Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ActiveAlarm;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires health data access to use your heart rate";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.thomash.ActiveAlarm;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomash.ActiveAlarm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		62CE8D1E2C13AC2800F9749A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ActiveAlarm Watch App/ActiveAlarm Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ActiveAlarm Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ActiveAlarm;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires health data access to use your heart rate";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.thomash.ActiveAlarm;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomash.ActiveAlarm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		62CE8D212C13AC2800F9749A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ActiveAlarm/Preview Content\"";
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ActiveAlarm/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ActiveAlarm;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Must have camera access for logging workouts";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomash.ActiveAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62CE8D222C13AC2800F9749A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ActiveAlarm/Preview Content\"";
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ActiveAlarm/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ActiveAlarm;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Must have camera access for logging workouts";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomash.ActiveAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62CE8D242C13AC2800F9749A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomash.ActiveAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActiveAlarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ActiveAlarm";
+			};
+			name = Debug;
+		};
+		62CE8D252C13AC2800F9749A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomash.ActiveAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActiveAlarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ActiveAlarm";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62CE8D272C13AC2800F9749A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomash.ActiveAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ActiveAlarm;
+			};
+			name = Debug;
+		};
+		62CE8D282C13AC2800F9749A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomash.ActiveAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ActiveAlarm;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62CE8D2A2C13AC2800F9749A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thomash.ActiveAlarm-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActiveAlarm Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ActiveAlarm Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		62CE8D2B2C13AC2800F9749A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thomash.ActiveAlarm-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActiveAlarm Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ActiveAlarm Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		62CE8D2D2C13AC2800F9749A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thomash.ActiveAlarm-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ActiveAlarm Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		62CE8D2E2C13AC2800F9749A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CUTHV2W6U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thomash.ActiveAlarm-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ActiveAlarm Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62CE8CCB2C13AC1F00F9749A /* Build configuration list for PBXProject "ActiveAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CE8D1A2C13AC2800F9749A /* Debug */,
+				62CE8D1B2C13AC2800F9749A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CE8D1C2C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarm Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CE8D1D2C13AC2800F9749A /* Debug */,
+				62CE8D1E2C13AC2800F9749A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CE8D202C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CE8D212C13AC2800F9749A /* Debug */,
+				62CE8D222C13AC2800F9749A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CE8D232C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CE8D242C13AC2800F9749A /* Debug */,
+				62CE8D252C13AC2800F9749A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CE8D262C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CE8D272C13AC2800F9749A /* Debug */,
+				62CE8D282C13AC2800F9749A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CE8D292C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarm Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CE8D2A2C13AC2800F9749A /* Debug */,
+				62CE8D2B2C13AC2800F9749A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CE8D2C2C13AC2800F9749A /* Build configuration list for PBXNativeTarget "ActiveAlarm Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CE8D2D2C13AC2800F9749A /* Debug */,
+				62CE8D2E2C13AC2800F9749A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62CE8CC82C13AC1F00F9749A /* Project object */;
+}
