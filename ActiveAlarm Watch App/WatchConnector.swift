@@ -78,14 +78,31 @@ extension WatchConnector: WCSessionDelegate {
         print("Message received")
         print(message)
         if message.keys.contains("recordingState") {
-            if let _appState = appState {
-                if let recordingState = message["recordingState"] as? Bool {
+            if let _appState = appState,
+               let recordingState = message["recordingState"] as? Bool,
+               let uuidString = message["currentRecordingUUIDString"] as? String,
+               let workoutType = message["workoutType"] as? String,
+               let startTime = message["startTime"] as? Date {
+                if let uuid = UUID(uuidString: uuidString) {
                     DispatchQueue.global(qos: .background).async {
                         DispatchQueue.main.async {
                             _appState.recordingState = recordingState
+                            _appState.currentRecordingUUIDString = uuidString
+                            
+                        }
+                    }
+                    if recordingState == true {
+                        DispatchQueue.main.async {
+                            print("Attempting to insert new WorkoutDataOverseer into context")
+                            let newWorkoutDataOverseer = WorkoutDataOverseer(id: uuid, workoutType: workoutType, startTime: startTime)
+                            if self.context != nil {
+                                self.context!.insert(newWorkoutDataOverseer)
+                                print("WorkoutDataOverseer inserted into swiftData")
+                            }
                         }
                     }
                 }
+                
             }
         } else {
             print("message did not contain expected recording state key")
@@ -123,22 +140,23 @@ extension WatchConnector {
         do {
             let file = workoutDataJSON
             let jsonData = try Data(contentsOf: file.fileURL)
-            let workoutDatas = try JSONDecoder().decode(WorkoutDatas.self, from: jsonData)
-            print("Decoded received JSON")
-            DispatchQueue.main.async {
-//                self.workoutDatass.append(workoutDatas)
-                print("Data received from \(file.fileURL)")
-                if self.context != nil {
-                    self.context!.insert(workoutDatas)
-                    print("Data inserted into swiftData")
-                    self.saveJSONFile(jsonData: jsonData)
-                }
-//                if let context = self.context {
-//                    
+            saveJSONFile(jsonData: jsonData)
+//            let workoutDatas = try JSONDecoder().decode(WorkoutDatas.self, from: jsonData)
+//            print("Decoded received JSON")
+//            DispatchQueue.main.async {
+////                self.workoutDatass.append(workoutDatas)
+//                print("Data received from \(file.fileURL)")
+//                if self.context != nil {
+//                    self.context!.insert(workoutDatas)
+//                    print("Data inserted into swiftData")
+//                    self.saveJSONFile(jsonData: jsonData)
 //                }
-                
-    //            self.users.append(user)
-            }
+////                if let context = self.context {
+////
+////                }
+//
+//    //            self.users.append(user)
+//            }
         } catch {
             print("Failed to read or decode JSON file: \(error)")
         }
@@ -149,8 +167,7 @@ extension WatchConnector {
     
     func saveJSONFile(jsonData: Data) {
         // Define the file URL for the local directory
-        let currentTimeInSeconds = Int(Date().timeIntervalSince1970)
-        let fileName = "_\(currentTimeInSeconds).json"
+        let fileName = "\(appState?.currentRecordingUUIDString ?? "NO_UUIDString").json"
         let fileManager = FileManager.default
         let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
         let destinationURL = documentsURL.appendingPathComponent(fileName)

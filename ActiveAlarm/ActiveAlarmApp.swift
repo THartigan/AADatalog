@@ -15,7 +15,8 @@ struct ActiveAlarmApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(watchConnector: watchConnector)
-                .modelContainer(for: WorkoutDatas.self)
+                .modelContainer(for: WorkoutDataOverseer.self)
+//                .modelContainer(for: WorkoutDatas.self)
         }
     }
 }

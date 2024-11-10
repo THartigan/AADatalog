@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		625987422C3C9D8E00D873F6 /* FileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625987412C3C9D8E00D873F6 /* FileDetailView.swift */; };
+		625987442C3D44C200D873F6 /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625987432C3D44C200D873F6 /* FileController.swift */; };
+		627D5ACA2CA2E76300B8BB75 /* Situps2.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 627D5AC92CA2E76300B8BB75 /* Situps2.mlmodelc */; };
+		627D5ACB2CA2E76300B8BB75 /* Situps2.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 627D5AC92CA2E76300B8BB75 /* Situps2.mlmodelc */; };
+		627D5ACD2CA3081400B8BB75 /* Situps3.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 627D5ACC2CA3081400B8BB75 /* Situps3.mlmodelc */; };
+		627D5ACE2CA3081400B8BB75 /* Situps3.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 627D5ACC2CA3081400B8BB75 /* Situps3.mlmodelc */; };
+		627D5AD02CA4687700B8BB75 /* Situps4.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 627D5ACF2CA4687700B8BB75 /* Situps4.mlmodelc */; };
+		627D5AD12CA4687700B8BB75 /* Situps4.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 627D5ACF2CA4687700B8BB75 /* Situps4.mlmodelc */; };
 		62A2A47C2C22191F0054DAF0 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2A47B2C22191F0054DAF0 /* DocumentPicker.swift */; };
 		62B7E8522C32D6DF00547D1C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7E8512C32D6DF00547D1C /* AppState.swift */; };
 		62B7E8542C32DB7400547D1C /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7E8532C32DB7400547D1C /* RecordingView.swift */; };
@@ -28,6 +36,9 @@
 		62CE8D302C13BF5F00F9749A /* WorkoutDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8D2F2C13BF5F00F9749A /* WorkoutDetail.swift */; };
 		62CE8D362C14527E00F9749A /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8D352C14527E00F9749A /* Motion.swift */; };
 		62CE8D382C1460A700F9749A /* MotionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE8D372C1460A600F9749A /* MotionData.swift */; };
+		62DEC8402CA1AB23001B2EDB /* ModelProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DEC83F2CA1AB23001B2EDB /* ModelProcessing.swift */; };
+		62DEC8452CA1AD87001B2EDB /* Situps.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 62DEC8442CA1AD87001B2EDB /* Situps.mlmodelc */; };
+		62DEC8462CA1AD87001B2EDB /* Situps.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 62DEC8442CA1AD87001B2EDB /* Situps.mlmodelc */; };
 		62E4C5622C14B44B0090BF7F /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4C5612C14B44B0090BF7F /* Health.swift */; };
 		62E4C5682C166DB00090BF7F /* WorkoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4C5672C166DB00090BF7F /* WorkoutData.swift */; };
 		62E4C56D2C173C800090BF7F /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4C56B2C173A3B0090BF7F /* PhoneConnector.swift */; };
@@ -90,7 +101,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		625987412C3C9D8E00D873F6 /* FileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailView.swift; sourceTree = "<group>"; };
+		625987432C3D44C200D873F6 /* FileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
+		627D5AC92CA2E76300B8BB75 /* Situps2.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Situps2.mlmodelc; sourceTree = "<group>"; };
+		627D5ACC2CA3081400B8BB75 /* Situps3.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Situps3.mlmodelc; sourceTree = "<group>"; };
+		627D5ACF2CA4687700B8BB75 /* Situps4.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Situps4.mlmodelc; sourceTree = "<group>"; };
 		62A2A47B2C22191F0054DAF0 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		62A46D782C51768400EAFB55 /* ActiveAlarm-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ActiveAlarm-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		62B7E8512C32D6DF00547D1C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		62B7E8532C32DB7400547D1C /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
 		62CE8CD02C13AC1F00F9749A /* ActiveAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiveAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +134,8 @@
 		62CE8D332C144D1000F9749A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		62CE8D352C14527E00F9749A /* Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
 		62CE8D372C1460A600F9749A /* MotionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionData.swift; sourceTree = "<group>"; };
+		62DEC83F2CA1AB23001B2EDB /* ModelProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProcessing.swift; sourceTree = "<group>"; };
+		62DEC8442CA1AD87001B2EDB /* Situps.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Situps.mlmodelc; sourceTree = "<group>"; };
 		62E4C55C2C14AC0B0090BF7F /* ActiveAlarm Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ActiveAlarm Watch App.entitlements"; sourceTree = "<group>"; };
 		62E4C5612C14B44B0090BF7F /* Health.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
 		62E4C5672C166DB00090BF7F /* WorkoutData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutData.swift; sourceTree = "<group>"; };
@@ -214,6 +233,8 @@
 				62A2A47B2C22191F0054DAF0 /* DocumentPicker.swift */,
 				62B7E8512C32D6DF00547D1C /* AppState.swift */,
 				62B7E8532C32DB7400547D1C /* RecordingView.swift */,
+				625987432C3D44C200D873F6 /* FileController.swift */,
+				625987412C3C9D8E00D873F6 /* FileDetailView.swift */,
 			);
 			path = ActiveAlarm;
 			sourceTree = "<group>";
@@ -246,17 +267,23 @@
 		62CE8CFA2C13AC2600F9749A /* ActiveAlarm Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				62A46D782C51768400EAFB55 /* ActiveAlarm-Watch-App-Info.plist */,
 				62E4C56B2C173A3B0090BF7F /* PhoneConnector.swift */,
 				62E4C55C2C14AC0B0090BF7F /* ActiveAlarm Watch App.entitlements */,
 				62CE8CFB2C13AC2600F9749A /* ActiveAlarmApp.swift */,
 				62CE8CFD2C13AC2600F9749A /* ContentView.swift */,
 				62CE8D2F2C13BF5F00F9749A /* WorkoutDetail.swift */,
+				62DEC83F2CA1AB23001B2EDB /* ModelProcessing.swift */,
+				62DEC8442CA1AD87001B2EDB /* Situps.mlmodelc */,
 				62E4C5672C166DB00090BF7F /* WorkoutData.swift */,
 				62E4C5612C14B44B0090BF7F /* Health.swift */,
 				62CE8D372C1460A600F9749A /* MotionData.swift */,
 				62CE8D352C14527E00F9749A /* Motion.swift */,
 				62CE8CFF2C13AC2800F9749A /* Assets.xcassets */,
 				62CE8D012C13AC2800F9749A /* Preview Content */,
+				627D5AC92CA2E76300B8BB75 /* Situps2.mlmodelc */,
+				627D5ACC2CA3081400B8BB75 /* Situps3.mlmodelc */,
+				627D5ACF2CA4687700B8BB75 /* Situps4.mlmodelc */,
 			);
 			path = "ActiveAlarm Watch App";
 			sourceTree = "<group>";
@@ -468,7 +495,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				62CE8CDB2C13AC2500F9749A /* Preview Assets.xcassets in Resources */,
+				627D5ACD2CA3081400B8BB75 /* Situps3.mlmodelc in Resources */,
+				627D5ACA2CA2E76300B8BB75 /* Situps2.mlmodelc in Resources */,
+				627D5AD12CA4687700B8BB75 /* Situps4.mlmodelc in Resources */,
 				62CE8CD82C13AC2500F9749A /* Assets.xcassets in Resources */,
+				62DEC8462CA1AD87001B2EDB /* Situps.mlmodelc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +522,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				62CE8D032C13AC2800F9749A /* Preview Assets.xcassets in Resources */,
+				627D5ACE2CA3081400B8BB75 /* Situps3.mlmodelc in Resources */,
+				627D5ACB2CA2E76300B8BB75 /* Situps2.mlmodelc in Resources */,
+				627D5AD02CA4687700B8BB75 /* Situps4.mlmodelc in Resources */,
 				62CE8D002C13AC2800F9749A /* Assets.xcassets in Resources */,
+				62DEC8452CA1AD87001B2EDB /* Situps.mlmodelc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +553,7 @@
 			files = (
 				62E4C5762C17477B0090BF7F /* WorkoutDetail.swift in Sources */,
 				62E4C5722C17421A0090BF7F /* WorkoutData.swift in Sources */,
+				625987442C3D44C200D873F6 /* FileController.swift in Sources */,
 				62CE8CD62C13AC1F00F9749A /* ContentView.swift in Sources */,
 				62B7E8522C32D6DF00547D1C /* AppState.swift in Sources */,
 				62E4C56E2C173C840090BF7F /* WatchConnector.swift in Sources */,
@@ -525,6 +561,7 @@
 				62CE8CD42C13AC1F00F9749A /* ActiveAlarmApp.swift in Sources */,
 				62A2A47C2C22191F0054DAF0 /* DocumentPicker.swift in Sources */,
 				62E4C5712C17421A0090BF7F /* MotionData.swift in Sources */,
+				625987422C3C9D8E00D873F6 /* FileDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +588,7 @@
 			files = (
 				62CE8D302C13BF5F00F9749A /* WorkoutDetail.swift in Sources */,
 				62CE8D362C14527E00F9749A /* Motion.swift in Sources */,
+				62DEC8402CA1AB23001B2EDB /* ModelProcessing.swift in Sources */,
 				62CE8CFE2C13AC2600F9749A /* ContentView.swift in Sources */,
 				62CE8CFC2C13AC2600F9749A /* ActiveAlarmApp.swift in Sources */,
 				62E4C5682C166DB00090BF7F /* WorkoutData.swift in Sources */,
@@ -734,6 +772,7 @@
 				DEVELOPMENT_TEAM = CUTHV2W6U4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ActiveAlarm-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ActiveAlarm;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires health data access to use your heart rate";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -766,6 +805,7 @@
 				DEVELOPMENT_TEAM = CUTHV2W6U4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ActiveAlarm-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ActiveAlarm;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires health data access to use your heart rate";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";

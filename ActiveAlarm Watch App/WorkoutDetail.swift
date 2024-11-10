@@ -8,10 +8,13 @@
 import SwiftUI
 import CoreMotion
 import HealthKitUI
+import CoreML
 
 struct WorkoutDetail: View {
     var workout: String
     var phoneConnector: PhoneConnector
+    @StateObject var modelProcessing = ModelProcessing()
+    @State var frame = 0
     @StateObject var motion = Motion()
     @StateObject var health = Health()
     @State private var trigger = false
@@ -20,6 +23,7 @@ struct WorkoutDetail: View {
     @State var times: [Date] = []
     @State var heartRates: [Int] = []
     @State var motionDatas: [MotionData] = []
+    @State var currentUUID: UUID = UUID()
     
     var body: some View {
         VStack{
@@ -31,6 +35,8 @@ struct WorkoutDetail: View {
                     Text("HR: \(health.lastHeartRate)")
                 }
             }
+            Text("\(String(modelProcessing.numOutputs)) 0: \(String(format: "%.2f", modelProcessing.outputs[0])) 1: \(String(format: "%.2f", modelProcessing.outputs[1]))")
+            Text("Counted: \(String(modelProcessing.totalSitups))")
             
             
         }
@@ -41,12 +47,12 @@ struct WorkoutDetail: View {
             }
             var workoutDatas: [WorkoutData] = []
             for (i, time) in times.enumerated() {
-                workoutDatas.append(WorkoutData(time: time, heartRate: self.heartRates[i], motion: self.motionDatas[i], workoutType: self.workout))
+                workoutDatas.append(WorkoutData(time: time.timeIntervalSince1970, heartRate: self.heartRates[i], motion: self.motionDatas[i], workoutType: self.workout))
             }
-            let finalDatas = WorkoutDatas(workoutDatas: workoutDatas)
+            let finalDatas = WorkoutDatas(workoutDatas: workoutDatas, id: currentUUID)
             self.sendAsJSON(workoutDatas: finalDatas)
 //            phoneConnector.sendDataToPhone(finalDatas)
-            self.phoneConnector.sendPhoneRecordingState(enabled: false)
+            self.phoneConnector.sendPhoneRecordingState(enabled: false, currentRecordingUUID: currentUUID, workoutType: workout, startTime: Date.now)
         }
         .healthDataAccessRequest(store: health.healthStore, readTypes: health.allTypes, trigger: trigger, completion: { result in
             switch result {
@@ -59,9 +65,11 @@ struct WorkoutDetail: View {
                 
         })
         .onAppear(perform: {
+            currentUUID = UUID()
             trigger.toggle()
             self.healthQuery = health.startHeartRateQuery(quantityTypeIdentifier: .heartRate)
-            self.phoneConnector.sendPhoneRecordingState(enabled: true)
+            self.phoneConnector.sendPhoneRecordingState(enabled: true, currentRecordingUUID: currentUUID, workoutType: workout, startTime: Date.now)
+            
         })
         .onChange(of: motion.currentMotionData, { oldValue, newValue in
             if let motionData = motion.currentMotionData{
@@ -69,6 +77,11 @@ struct WorkoutDetail: View {
                     self.times.append(Date.now)
                     self.heartRates.append(health.lastHeartRate)
                     self.motionDatas.append(motionData)
+                    if self.frame >= 200 && self.frame % 200 == 0 {
+                        self.modelProcessing.process(times: self.times.suffix(200), motionDatas: self.motionDatas.suffix(200))
+                    }
+                    
+                    self.frame += 1
                 }
             }
         })

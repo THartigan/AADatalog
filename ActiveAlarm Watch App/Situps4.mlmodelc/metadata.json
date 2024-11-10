@@ -1,0 +1,68 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "var_66",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "visionOS" : "1.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "8.0",
+      "com.github.apple.coremltools.source" : "torch==2.4.0",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 9 × 200)",
+        "shortDescription" : "",
+        "shape" : "[1, 9, 200]",
+        "name" : "x_1",
+        "type" : "MultiArray"
+      }
+    ],
+    "generatedClassName" : "Situps4",
+    "neuralNetworkLayerTypeHistogram" : {
+      "InnerProduct" : 1,
+      "Copy" : 1,
+      "ActivationReLU" : 2,
+      "ReshapeStatic" : 1,
+      "SoftmaxND" : 1,
+      "ExpandDims" : 2,
+      "Convolution" : 2,
+      "ReduceMean" : 1,
+      "Squeeze" : 2
+    },
+    "method" : "predict"
+  }
+]

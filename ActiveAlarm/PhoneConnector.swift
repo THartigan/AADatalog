@@ -50,9 +50,12 @@ extension PhoneConnector {
 //        session.sendMessage(dict, replyHandler: nil)
     }
     
-    public func sendPhoneRecordingState(enabled state: Bool) {
+    public func sendPhoneRecordingState(enabled state: Bool, currentRecordingUUID: UUID, workoutType: String, startTime: Date) {
         print("Attempting to send message")
-        session.sendMessage(["recordingState": state], replyHandler: nil, errorHandler: { error in
+        session.sendMessage(["recordingState": state, 
+                             "currentRecordingUUIDString": currentRecordingUUID.uuidString,
+                             "workoutType": workoutType,
+                             "startTime": startTime], replyHandler: nil, errorHandler: { error in
             print("Error sending message: \(error.localizedDescription)")
         })
     }
